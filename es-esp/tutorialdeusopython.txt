@@ -36,12 +36,47 @@ F = abierto (fn, "wb")
 F.write (r.text.encode ("UTF-8"))
 F.close ()
 
-"" "Para obtener más información sobre el módulo de solicitudes, incluidas las API, consulte
-    Http://docs.python-requests.org/en/latest/user/quickstart/
-Unesdoc.unesco.org unesdoc.unesco.org
+"Para obtener más información sobre el módulo de solicitudes, incluidas las API,consulte 
+Http://docs.python-requests.org/en/latest/user/quickstart/Unesdoc.unesco.org unesdoc.unesco.org
 
 # 2. Lectura de un archivo CSV ====
 
 "El paquete pandas de Wes McKinney le da objetos 'DataFrame' en Python.
     Usted ha utilizado R, usted estará familiarizado con la idea de la "data.frame" ya.
 Unesdoc.unesco.org unesdoc.unesco.org
+Importar pandas como pd
+Importar numpy como np
+Import scipy as sp
+Pets = pd.read_csv (fn)
+mascotas
+# Nombre edad peso especie
+# 0 mullido 3 14 gato
+# 1 vesuvius 6 23 peces
+# 2 rex 5 34 perro
+
+Usuarios de R: note que Python, como la mayoría de los lenguajes de programación normales, comienza
+    Indexación desde 0. R es la inusual para partir de 1.
+Unesdoc.unesco.org unesdoc.unesco.org
+
+# Dos maneras diferentes de imprimir una columna
+Mascotas
+Mascotas ["edad"]
+
+Pets.head (2) # imprime primero 2 filas
+Pets.tail (1) # imprime la última fila
+
+Pets.name [1] # 'vesuvius'
+Pets.species [0] # 'cat'
+Animales domésticos ["peso"] [2] # 34
+
+# En R, usted esperaría conseguir 3 filas que hacen esto, pero aquí usted consigue 2:
+Pets.age [0: 2]
+# 0 3
+# dieciséis
+
+Suma (pets.age) * 2 # 28
+Max (mascota.pesado) - min (mascota.pesado) # 20
+
+Si usted está haciendo algún álgebra lineal serio y crujido numérico, usted puede Sólo quiere arrays, no DataFrames. Los DataFrames son ideales para combinar columnas de diferentes tipos.Unesdoc.unesco.org unesdoc.unesco.org
+
+
