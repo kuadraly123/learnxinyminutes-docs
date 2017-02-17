@@ -114,3 +114,34 @@ Ggplot (aes (x = "edad", y = "peso"), datos = mascotas) + geom_point () + labs (
 
 # Hay incluso un puerto d3.js: https://github.com/mikedewar/d3py
 
+# 4. Simple limpieza de datos y análisis exploratorio ====
+
+"" "Aquí hay un ejemplo más complicado que demuestra una base de datos
+    El flujo de trabajo de limpieza que conduce a la creación de algunas parcelas exploratorias
+    Y el funcionamiento de una regresión lineal.
+        El conjunto de datos fue transcripto de Wikipedia a mano. Contiene
+    Todos los emperadores romanos santo y los hitos importantes en sus vidas
+    (Nacimiento, muerte, coronación, etc.).
+        El objetivo del análisis será explorar si una relación
+    Existe entre el año del nacimiento del emperador y la esperanza de vida del emperador.
+    Fuente de datos: https://en.wikipedia.org/wiki/Holy_Roman_Emperor
+Un
+
+# Cargar algunos datos sobre los emperadores romanos santo
+Url = "https://raw.githubusercontent.com/e99n09/R-notes/master/data/hre.csv"
+R = requests.get (url)
+Fp = "hre.csv"
+Con abierto (fp, "wb") como f:
+    F.write (r.text.encode ("UTF-8"))
+
+Hre = pd.read_csv (fp)
+
+Hre.head ()
+Un
+   Ix Dynasty Nombre Nacimiento Elección de la muerte 1
+0 NaN Carolingian Charles I 2 de abril 742 28 de enero 814 NaN
+1 NaN Carolingian Louis I 778 20 de junio 840 NaN
+2 NaN Carolingian Lothair I 795 29 de septiembre 855 NaN
+3 NaN Carolingian Louis II 825 12 de agosto 875 NaN
+4 NaN Carolingian Charles II 13 junio 823 6 octubre 877 NaN
+
