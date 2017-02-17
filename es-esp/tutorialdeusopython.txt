@@ -1,0 +1,4 @@
+categoria: herramienta
+herramienta: gitbash
+contribuidor:
+    - ["Jalil Alvarez ", "https://github.com/kuadraly123"]
