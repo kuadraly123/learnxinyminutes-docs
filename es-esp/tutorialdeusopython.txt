@@ -7,3 +7,41 @@ Este es un tutorial sobre como hacer algunas tareas tipicas de programacion. Est
 
 Vamos a configurar con IPython and pip instalando lo siguiente: numpy, scipy, pandas,matplotlib, seaborn, peticiones.
 Asegúrese de hacer este tutorial en el cuaderno IPython para que los gráficos en línea y la búsqueda de documentación se hagan fácil.
+
+# 1. Datos De Adquisicion
+==========================
+Una razón por la que la gente elige Python sobre R es que tienen la intención de interactuar mucho
+con la web, ya sea raspando páginas directamente o solicitando datos a través de una API. Usted puede hacer esas cosas en R, pero en el contexto de un proyecto ya está usando Python, hay un beneficio a pegarse con un solo idioma.
+
+Solicitudes de importación # para solicitudes HTTP (raspado web, API)
+Importar
+
+Raspado web
+R = requests.get ("https://github.com/adambard/learnxinyminutes-docs")
+R.status_code # si 200, la solicitud fue satisfactoria
+R.text # raw página fuente
+Print (r.text) # prettily formateado
+# Guardar el origen de la página en un archivo:
+Os.getcwd () # comprobar cuál es el directorio de trabajo
+F = open ("learnxinyminutes.html", "wb")
+F.write (r.text.encode ("UTF-8"))
+F.close ()
+
+# Descargar un csv
+Fp = "https://raw.githubusercontent.com/adambard/learnxinyminutes-docs/master/"
+Fn = "pets.csv"
+R = requests.get (fp + fn)
+Imprimir (r.texto)
+F = abierto (fn, "wb")
+F.write (r.text.encode ("UTF-8"))
+F.close ()
+
+"" "Para obtener más información sobre el módulo de solicitudes, incluidas las API, consulte
+    Http://docs.python-requests.org/en/latest/user/quickstart/
+Unesdoc.unesco.org unesdoc.unesco.org
+
+# 2. Lectura de un archivo CSV ====
+
+"El paquete pandas de Wes McKinney le da objetos 'DataFrame' en Python.
+    Usted ha utilizado R, usted estará familiarizado con la idea de la "data.frame" ya.
+Unesdoc.unesco.org unesdoc.unesco.org
