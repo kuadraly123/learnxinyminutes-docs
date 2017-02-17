@@ -79,4 +79,38 @@ Max (mascota.pesado) - min (mascota.pesado) # 20
 
 Si usted está haciendo algún álgebra lineal serio y crujido numérico, usted puede Sólo quiere arrays, no DataFrames. Los DataFrames son ideales para combinar columnas de diferentes tipos.Unesdoc.unesco.org unesdoc.unesco.org
 
+# 3. Gráficos ====
+
+Import matplotlib como mpl
+Import matplotlib.pyplot as plt
+% Matplotlib inline
+
+# Para hacer la vizualización de datos en Python, use matplotlib
+
+Plt.hist (pets.age);
+
+Plt.boxplot (pets.weight);
+
+Plt.scatter (pets.age, pets.weight)
+Plt.xlabel ("edad")
+Plt.label ("peso");
+
+# Seaborn se sienta encima de matplotlib y hace parcelas más bonitas
+
+Importar seaborn como sns
+
+Plt.scatter (pets.age, pets.weight)
+Plt.xlabel ("edad")
+Plt.label ("peso");
+
+# También hay algunas funciones de trazado específico de seaborn
+# Notar cómo seaborn etiqueta automáticamente el eje x en este barplot
+Sns.barplot (mascotas ["edad"])
+
+# R veteranos todavía pueden usar ggplot
+Desde la importación de ggplot *
+Ggplot (aes (x = "edad", y = "peso"), datos = mascotas) + geom_point () + labs (title = "pets")
+# Fuente: https://pypi.python.org/pypi/ggplot
+
+# Hay incluso un puerto d3.js: https://github.com/mikedewar/d3py
 
