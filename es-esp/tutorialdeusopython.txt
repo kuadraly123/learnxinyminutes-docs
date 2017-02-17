@@ -2,3 +2,8 @@ categoria: herramienta
 herramienta: gitbash
 contribuidor:
     - ["Jalil Alvarez ", "https://github.com/kuadraly123"]
+
+Este es un tutorial sobre como hacer algunas tareas tipicas de programacion. Esta es un destinado para las personas basicamente familiares con python y experiencia en la programacion estadistica en un idioma como R, Stata, SAS, SPSS, or MATLAB. 
+
+Vamos a configurar con IPython and pip instalando lo siguiente: numpy, scipy, pandas,matplotlib, seaborn, peticiones.
+Asegúrese de hacer este tutorial en el cuaderno IPython para que los gráficos en línea y la búsqueda de documentación se hagan fácil.
